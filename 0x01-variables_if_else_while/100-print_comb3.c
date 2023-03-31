@@ -21,9 +21,11 @@ int main(void)
 				putchar('0' + digit1);
 				putchar('0' + digit2);
 			}
-
-			putchar(',');
-			putchar(' ');
+			if (digit1 != 8 && digit2 != 9)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
