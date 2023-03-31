@@ -14,15 +14,16 @@ int main(void)
 
 	for (digit1 = 0 ; digit1 < 9 ; digit1++)
 	{
-		for (digit2 = 1 ; digit2 <= 9 ; digit2++)
+		for (digit2 = digit1 + 1 ; digit2 <= 9 ; digit2++)
 		{
-			if (digit1 != digit2 && digit2 != digit1)
+			if (digit1 < 9 && digit2 <= 9)
 			{
 				putchar('0' + digit1);
 				putchar('0' + digit2);
-				putchar(',');
-				putchar(' ');
 			}
+
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
