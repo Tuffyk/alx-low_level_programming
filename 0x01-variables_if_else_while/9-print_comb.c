@@ -14,8 +14,8 @@ int main(void)
 	for (n = 0 ; n <= 9 ; n++)
 	{
 		putchar('0' + n);
-		putchar(", ");
+		putchar(, );
 	}
-	putchar("\$\n");
+	putchar('\n');
 }
 
