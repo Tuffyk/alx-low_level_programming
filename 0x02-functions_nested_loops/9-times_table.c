@@ -20,6 +20,8 @@ void times_table(void)
 
 			m = i * j;
 
+			_putchar('0' + m);
+
 			if (m <= 9)
 			{
 				_putchar(' ');
@@ -35,5 +37,4 @@ void times_table(void)
 			_putchar('\n');
 		}
 	}
-}
-		
+}		
