@@ -4,6 +4,7 @@
 /**
  * print_to_98 - Prints all natural numbers from n to 98
  * followed by a new line
+ * @n : The number passed to the function
  * Numbers must be seperated by a comma, followed by a space
  * Numbers should be printed in order
  * The first printed number is the number passed to the function
@@ -23,7 +24,7 @@ void print_to_98(int n)
 			printf(", %d", n);
 			n++;
 		}
-		printf("\n");
+		printf(", 98\n");
 	}
 	else if (n > 98)
 	{
@@ -35,7 +36,7 @@ void print_to_98(int n)
 			printf(", %d", n);
 			n--;
 		}
-		printf("\n");
+		printf(", 98\n");
 	}
 	else 
 	{
