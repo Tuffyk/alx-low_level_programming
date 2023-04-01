@@ -14,15 +14,17 @@ void jack_bauer(void)
 	{
 		for (minutes = 0 ; minutes <= 59 ; minutes++)
 		{
-			if (hours == 0 || minutes == 0)
+			if (hours == 0)
 			{
 				_putchar('0' + hours);
 				_putchar('0' + hours);
 				_putchar(':');
+			}
+			else if (minutes == 0)
+			{
 				_putchar('0' + minutes);
 				_putchar('0' + minutes);
 				_putchar('\n');
-			}
 			else
 			{
 				_putchar('0' + hours);
