@@ -8,9 +8,9 @@
 
 void print_times_table(int n)
 {
-	int i, j, m, tens, ones;
+	int i, j, m, h, t, o;
 
-	if (n > 0 && n <= 15)
+	if (n >= 0 && n <= 15)
 	{
 		for (i = 0 ; i <= n ; i++)
 		{
@@ -18,16 +18,28 @@ void print_times_table(int n)
 			{
 				m = i * j;
 
-				if (m > 9)
+				if (m > 99)
 				{
-					tens = m / 10;
-					ones = m % 10;
+					h = m / 100;
+					t = m / 10;
+					o = m % 10;
+
+					_putchar(',');
+					_putchar(' ');
+					_putchar('0' + h);
+					_putchar('0' + t);
+					_putchar('0' + o);
+				}
+				else if (m > 9)
+				{
+					t = m / 10;
+					o = m % 10;
 
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
-					_putchar('0' + tens);
-					_putchar('0' + ones);
+					_putchar('0' + t);
+					_putchar('0' + o);
 				}
 				else
 				{
