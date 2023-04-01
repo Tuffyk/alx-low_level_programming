@@ -20,7 +20,7 @@ void jack_bauer(void)
 				_putchar('0' + hours);
 				_putchar(':');
 				_putchar('0' + minutes);
-				-putchar('0' + minutes);
+				_putchar('0' + minutes);
 				_putchar('\n');
 			}
 			_putchar('0' + hours);
@@ -29,6 +29,4 @@ void jack_bauer(void)
 			_putchar('\n');
 		}
 	}
-	
-	return (0);
 }
