@@ -18,7 +18,7 @@ void print_times_table(int n)
 			{
 				m = i * j;
 
-				if (m > 99)
+				if (m >= 99)
 				{
 					h = m / 100;
 					t = m / 10;
