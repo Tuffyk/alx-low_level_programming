@@ -20,7 +20,7 @@ void times_table(void)
 				t = m / 10;
 				o = m % 10;
 
-				_putchar(';');
+				_putchar(',');
 				_putchar(' ');
 				_putchar('0' + t);
 				_putchar('0' + o);
@@ -29,11 +29,10 @@ void times_table(void)
 			{
 				if (j > 0)
 				{
-					_putchar(';');
+					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 				}
-				
 				_putchar('0' + m);
 			}
 		}
