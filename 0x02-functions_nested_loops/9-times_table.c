@@ -21,8 +21,11 @@ void times_table(void)
 				o = m % 10;
 				_putchar('0' + t);
 				_putchar('0' + o);
-				_putchar(',');
-				_putchar(' ');
+				if (j < 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
 			else
 			{
