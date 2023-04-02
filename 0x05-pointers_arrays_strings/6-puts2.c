@@ -14,11 +14,24 @@ void puts2(char *str)
 	for (i = 0 ; str[i] != '\0' ; i++)
 	{
 	}
-	for (j = 0 ; j < (i - 1) ; j++)
+	if ((i - 1) % 2 == 1)
 	{
-		if (j % 2 == 0)
+		for (j = 0 ; j < (i - 1) ; j++)
 		{
-			_putchar(str[j]);
+			if (j % 2 == 0)
+			{
+				_putchar(str[j]);
+			}
+		}
+	}
+	if ((i - 1) % 2 ==0)
+	{
+		for (j = 0 ; j < i ; j++)
+		{
+			if (j % 2 == 0)
+			{
+				_putchar(str[j]);
+			}
 		}
 	}
 	_putchar('\n');
