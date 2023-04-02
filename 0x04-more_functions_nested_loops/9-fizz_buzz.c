@@ -10,7 +10,11 @@
 
 int main(void)
 {
-	int i = 1;
+	int i;
+
+	printf("%d", 1);
+
+	i = 2;
 	
 	while (i <= 100)
 	{
@@ -33,5 +37,6 @@ int main(void)
 		i++;
 	}
 	printf("\n");
+
 	return (0);
 }
