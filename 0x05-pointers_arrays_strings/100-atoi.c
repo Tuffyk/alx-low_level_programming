@@ -31,7 +31,7 @@ int _atoi(char *s)
 			}
 		}
 	}
-	if (p < 0)
+	if (sign < 0)
 	{
 		newS *= -1;
 	}
