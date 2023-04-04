@@ -31,7 +31,7 @@ int _atoi(char *s)
 		{
 			if (*(s + j) >= 48 && *(s + j) <= 57)
 			{
-				*(s + lenght) = *(s + j);
+				*(s + length) = *(s + j);
 				length++;
 			}
 		}
