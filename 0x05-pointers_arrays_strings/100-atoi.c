@@ -9,11 +9,11 @@
 int _atoi(char *s)
 {
 	int i, j, totalMin, length;
-	
-	totalMin = 0;
-	length = 0;
 
 	i = 0;
+	totalMin = 0;
+	length = ;
+
 	while (*s != '\0')
 	{
 		if ((*(s + i)) == '-')
