@@ -8,46 +8,32 @@
 
 int _atoi(char *s)
 {
-	int i, j, totalMin, length;
+	int i, sign, newS;
 
-	i = 0;
-	totalMin = 0;
-	length = 0;
+	sign = -1;
+	newS = 0;
 
-	while (*s != '\0')
+	for (i = 0 ; *s != '\0' ; i++)
 	{
-		if ((*(s + i)) == '-')
+		if (*(s + i) == '-')
 		{
-			totalMin++;
+			sign *= -1;
 		}
-		i++;
-	}
-	if ( totalMin % 2 == 1)
-	{
-		*(s + 0) = '-';
-		length++;
-
-		for (j = 1 ; *s != '\0' ; j++)
+		if (*(s + i) >= 48 && *(s + i) <= 57)
 		{
-			if (*(s + j) >= 48 && *(s + j) <= 57)
+			if (newS < 0)
 			{
-				*(s + length) = *(s + j);
-				length++;
+				newS = (newS * 10) - (*(s + i) - '0');
+			}
+			else
+			{
+				newS = (*((s + i - '0')) * -1);
 			}
 		}
 	}
-	else
+	if (p < 0)
 	{
-		for (j = 0 ; *s != '\0' ; j++)
-		{
-			if (*(s + j) >= 48 && *(s + j) <= 57)
-			{
-				*(s + length) = *(s + j);
-				length++;
-			}
-		}
+		newS *= -1;
 	}
-	*(s + length) = '\0';
-
-	return (*s);
+	return (newS);
 }
