@@ -11,7 +11,7 @@ int _atoi(char *s)
 	int i, j, totalMin, length;
 	
 	totalMin = 0;
-	length = 0
+	length = 0;
 
 	i = 0;
 	while (*s != '\0')
@@ -27,7 +27,7 @@ int _atoi(char *s)
 		*(s + 0) = '-';
 		length++;
 
-		for (j = 1 ; *s != '\0'; j++)
+		for (j = 1 ; *s != '\0' ; j++)
 		{
 			if (*(s + j) >= 48 && *(s + j) <= 57)
 			{
@@ -38,7 +38,7 @@ int _atoi(char *s)
 	}
 	else
 	{
-		for (j = 0; *s != '\0' ; j++)
+		for (j = 0 ; *s != '\0' ; j++)
 		{
 			if (*(s + j) >= 48 && *(s + j) <= 57)
 			{
