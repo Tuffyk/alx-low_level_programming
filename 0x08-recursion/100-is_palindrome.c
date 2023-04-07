@@ -48,9 +48,12 @@ int string_check(char *s, int j, int strLength)
 	{
 		j++;
 		strLength--;
+		r = 1;
+	}
+	if (r = 1 && strLengh > j)
+	{
 		return (1);
 		string_check(s, j, strLength);
-	}
 	else
 	{
 		return (0);
