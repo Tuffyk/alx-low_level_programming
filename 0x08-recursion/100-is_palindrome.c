@@ -52,11 +52,14 @@ int string_length(char *s, int i)
 
 int string_check(char *s, int j, int strLength)
 {
-	if ((strLength % 2 != 0) && (*(s + j) == *(s + strLength)) && (j != strLength))
+	if (strLength % 2 != 0) 
 	{
-		j++;
-		strLength--;
-		string_check(s, j, strLength);
-	}
+		if (*(s + j) == *(s + (strLength - 1)) && j != strLength)
+		{
+			j++;
+			strLength--;
+			string_check(s, j, strLength);
+		}
+
 	return (1);
 }
