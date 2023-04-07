@@ -44,6 +44,8 @@ int string_length(char *s, int i)
 
 int string_check(char *s, int j, int strLength)
 {
+	int r = 0;
+
 	if (*(s + j) == *(s + strLength) && j < strLength)
 	{
 		j++;
