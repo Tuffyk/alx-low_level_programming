@@ -50,12 +50,12 @@ int string_check(char *s, int j, int strLength)
 		strLength--;
 		string_check(s, j, strLength);
 	}
-	if (*(s - j) == *(s - strLength))
+	if (j < strLength)
 	{
-		return (1);
+		return (0);
 	}
 	else
 	{
-		return (0);
+		return (1);
 	}
 }
