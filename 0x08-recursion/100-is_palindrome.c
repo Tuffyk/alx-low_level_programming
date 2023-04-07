@@ -10,17 +10,17 @@ int is_palindrome(char *s)
 {
 	int i, j, strLength;
 
-	i = 1;
+	i = 0;
 	j = 0;
-	strLength = string_length(*s, i);
+	strLength += string_length(s, i);
 
-	if (*(s + j) != *(s + length))
+	if (*(s + j) != *(s + strLength))
 	{
 		return (0);
 	}
 	else
 	{
-		return (string_check(*s, j, strLength));
+		return (string_check(s, j, strLength));
 	}
 }
 
@@ -32,10 +32,10 @@ int is_palindrome(char *s)
 
 int string_length(char *s, int i)
 {
-	if (*s != '\0')
+	if (*(s + i) != '\0')
 	{
 		i++;
-		string_length(*s, i);
+		string_length(s, i);
 	}
 	return (i);
 }
@@ -54,7 +54,7 @@ int string_check(char *s, int j, int strLength)
 	{
 		j++;
 		strLength--;
-		string_check(*s, j, strLength);
+		string_check(s, j, strLength);
 	}
 	return (1);
 }
