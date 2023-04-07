@@ -14,15 +14,7 @@ int is_palindrome(char *s)
 	j = 0;
 	strLength = 0;
 	strLength = string_length(s, i);
-
-	if (*(s + j) != *(s + strLength))
-	{
-		return (0);
-	}
-	else
-	{
-		return (string_check(s, j, strLength));
-	}
+	return (string_check(s, j, strLength));
 }
 
 /**
@@ -54,7 +46,7 @@ int string_check(char *s, int j, int strLength)
 {
 	if (strLength % 2 != 0) 
 	{
-		if (*(s + j) == *(s + (strLength - 1)) && j != strLength)
+		if (*(s + j) == *(s + (strLength)) && j != strLength)
 		{
 			j++;
 			strLength--;
