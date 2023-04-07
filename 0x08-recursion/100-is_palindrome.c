@@ -28,6 +28,7 @@ int is_palindrome(char *s)
 /**
  * string_length - Counts string length
  * @s : string pointer
+ * @i: counter
  * Return: string length
  */
 
@@ -51,7 +52,7 @@ int string_length(char *s, int i)
 
 int string_check(char *s, int j, int strLength)
 {
-	if (*(s + j) == *(s + strLength) && j != strLength)
+	if ((strLength % 2 != 0 ) && *(s + j) == *(s + strLength) && j != strLength)
 	{
 		j++;
 		strLength--;
