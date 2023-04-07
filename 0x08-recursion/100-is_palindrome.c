@@ -54,13 +54,16 @@ int string_check(char *s, int j, int strLength)
 		}
 		return (1);
 	}
-	else if (*(s + j) == *(s + (strLength)) && j < strLength)
+	else if (strLenght % 2 ==0)
 	{
-		j++;
-		strLength--;
-		string_check(s, j, strLength);
+		if (*(s + j) == *(s + (strLength)) && j < strLength)
+		{
+			j++;
+			strLength--;
+			string_check(s, j, strLength);
+		}
+		return (1);
 	}
-	return (1);
 	else
 	{
 		return (0);
