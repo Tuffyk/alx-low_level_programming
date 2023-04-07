@@ -36,7 +36,7 @@ int check_prime_number(int n, int i)
 	if (6 * i + 1 < n)
 	{
 		i++;
-		check_prime_number(n, i);
+		return (check_prime_number(n, i));
 	}
 	else if (6 * i + 1 == n || 6 * i - 1 == n)
 	{
