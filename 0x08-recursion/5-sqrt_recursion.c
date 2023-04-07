@@ -5,7 +5,9 @@
  * @n: computed number
  * If n does not have a natural square root, return -1
  * Return: natural square root of n
- *
+ */
+
+/**
  * _sqrt_check - Checks for the natural square root of the number
  * @n: computed number
  * @x: number used for checking
@@ -35,7 +37,7 @@ int _sqrt_check(int n, int x)
 	else if (x * x < n)
 	{
 		x++;
-		return (_sqrt_check(n , x));
+		return (_sqrt_check(n, x));
 	}
 	else
 	{
