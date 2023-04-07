@@ -50,7 +50,7 @@ int string_length(char *s, int i)
 
 int string_check(char *s, int j, int strLength)
 {
-	if (*(s + j) == *(s + strLength) && j != strlength)
+	if (*(s + j) == *(s + strLength) && j != strLength)
 	{
 		j++;
 		strLength--;
