@@ -52,7 +52,7 @@ int string_check(char *s, int j, int strLength)
 		strLength--;
 		r = 1;
 	}
-	if (r = 1 && strLengh > j)
+	if (r == 1 && strLength > j)
 	{
 		return (1);
 		string_check(s, j, strLength);
