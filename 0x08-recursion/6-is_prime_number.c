@@ -42,7 +42,7 @@ int check_prime_number(int n, int i)
 	{
 		return (1);
 	}
-	else 
+	else
 	{
 		return (0);
 	}
