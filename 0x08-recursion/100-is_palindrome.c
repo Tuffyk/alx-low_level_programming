@@ -46,7 +46,7 @@ int string_check(char *s, int j, int strLength)
 {
 	if (strLength % 2 != 0) 
 	{
-		if (*(s + j) == *(s + (strLength)) && j != strLength)
+		if (*(s + j) == *(s + strLength) && j < strLength)
 		{
 			j++;
 			strLength--;
@@ -56,7 +56,7 @@ int string_check(char *s, int j, int strLength)
 	}
 	else if (strLength % 2 == 0)
 	{
-		if (*(s + j) == *(s + (strLength)) && j < strLength)
+		if (*(s + j) == *(s + strLength) && j < strLength)
 		{
 			j++;
 			strLength--;
