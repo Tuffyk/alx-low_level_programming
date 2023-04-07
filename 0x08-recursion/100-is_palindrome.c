@@ -51,7 +51,7 @@ int string_check(char *s, int j, int k)
 	{
 		return 1;
 	}
-	if (*(s + j) != *(s + k))
+	else if (*(s + j) != *(s + k))
 	{
 		return 0;
 	}
