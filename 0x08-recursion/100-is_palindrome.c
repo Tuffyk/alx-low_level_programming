@@ -13,7 +13,7 @@ int is_palindrome(char *s)
 	i = 0;
 	j = 0;
 	strLength = 0;
-	strLength += string_length(s, i);
+	strLength = string_length(s, i);
 
 	if (*(s + j) != *(s + strLength))
 	{
