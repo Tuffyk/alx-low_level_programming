@@ -44,18 +44,15 @@ int string_length(char *s, int i)
 
 int string_check(char *s, int j, int strLength)
 {
-	int r = 0;
-
 	if (*(s + j) == *(s + strLength) && j < strLength)
 	{
 		j++;
 		strLength--;
-		r = 1;
+		string_check(s, j, strLength);
 	}
-	if (r == 1 && strLength > j)
+	if (strLength > j)
 	{
 		return (1);
-		string_check(s, j, strLength);
 	}
 	else
 	{
