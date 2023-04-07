@@ -8,54 +8,52 @@
 
 int is_palindrome(char *s)
 {
-	int i, j, strLength;
-
-	i = 0;
-	j = 0;
-	strLength = 0;
-	strLength = string_length(s, i);
-	return (string_check(s, j, strLength));
+	int strLength = string_length(s);
+	if (strLength <= 1)
+	{
+		return 1;
+	}
+	else
+	{
+		return (string_check(s, 0, strLength - 1));
+	}
 }
 
 /**
  * string_length - Counts string length
  * @s : string pointer
- * @i: counter
  * Return: string length
  */
 
-int string_length(char *s, int i)
+int string_length(char *s)
 {
-	if (*(s + i) != '\0')
+	if (*s != '\0')
 	{
-		i++;
-		string_length(s, i);
+		return 0;
 	}
-	return (i);
+	else
+	{
+		return (1 + string_length(s + 1));
+	}
 }
 
 /**
  * string_check - Checks if the string is palindrome
  * @s: string pointer
- * @j: counter
- * @strLength : string length
+ * @j: starting of string
+ * @k: ending of string
  * Return: 1 if the string is palindrome, 0 if not
  */
 
-int string_check(char *s, int j, int strLength)
+int string_check(char *s, int j, int k)
 {
-	if (*(s + j) == *(s + strLength))
+	if (j >= k)
 	{
-		if (j < strLength)
-		{
-			j++;
-			strLength--;
-			return (string_check(s, j, strLength));
-		}
-		return (1);
+		return 1;
 	}
-	else
+	if (*(s + j) != *(s + k))
 	{
-		return (0);
+		return 0;
 	}
+	return string_check(s, j + 1, k - 1);
 }
