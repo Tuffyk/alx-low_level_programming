@@ -55,5 +55,8 @@ int string_check(char *s, int j, int k)
 	{
 		return 0;
 	}
-	return string_check(s, j + 1, k - 1);
+	else
+	{
+		return string_check(s, j + 1, k - 1);
+	}
 }
