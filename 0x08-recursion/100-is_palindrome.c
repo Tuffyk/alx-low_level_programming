@@ -50,7 +50,7 @@ int string_check(char *s, int j, int strLength)
 		strLength--;
 		string_check(s, j, strLength);
 	}
-	if (strLength >= j && *(s + j) == *(s + strLength))
+	if (*(s + j) == *(s + strLength))
 	{
 		return (1);
 	}
@@ -58,5 +58,4 @@ int string_check(char *s, int j, int strLength)
 	{
 		return (0);
 	}
-		
 }
