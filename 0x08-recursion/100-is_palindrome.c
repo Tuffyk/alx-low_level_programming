@@ -56,6 +56,7 @@ int string_check(char *s, int j, int strLength)
 	{
 		return (1);
 		string_check(s, j, strLength);
+	}
 	else
 	{
 		return (0);
