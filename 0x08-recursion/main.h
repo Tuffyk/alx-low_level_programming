@@ -9,5 +9,5 @@ int _sqrt_check(int n, int x);
 int is_prime_number(int n);
 int check_prime_number(int n, int i);
 int is_palindrome(char *s);
-int string_length(char *s, int i);
-int string_check(char *s, int j, int strLength);
+int string_length(char *s);
+int string_check(char *s, int j, int k);
