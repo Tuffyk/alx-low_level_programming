@@ -60,6 +60,6 @@ int string_check(char *s, int j, int strLength)
 			strLength--;
 			string_check(s, j, strLength);
 		}
-
+	}
 	return (1);
 }
