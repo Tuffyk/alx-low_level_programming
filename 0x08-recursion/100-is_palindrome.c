@@ -54,7 +54,7 @@ int string_check(char *s, int j, int strLength)
 		}
 		return (1);
 	}
-	else if (strLenght % 2 ==0)
+	else if (strLength % 2 == 0)
 	{
 		if (*(s + j) == *(s + (strLength)) && j < strLength)
 		{
