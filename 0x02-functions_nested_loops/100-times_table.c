@@ -52,12 +52,8 @@ void print_times_table(int n)
 					if ((i * j) > 9)
 					{
 						_putchar('0' + ((i * j) / 10));
-						_putchar('0' + ((i * j) % 10));
 					}
-					else
-					{
-						_putchar('0' + (i * j));
-					}
+					_putchar('0' + (i * j) % 10);
 				}
 				j++;
 			}
