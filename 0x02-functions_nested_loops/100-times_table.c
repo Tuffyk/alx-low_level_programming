@@ -21,7 +21,7 @@ void print_times_table(int n)
 		while (i <= n)
 		{
 			j = 0;
-			while (j < n)
+			while (j <= n)
 			{
 				if ((i * j) > 99)
 				{
