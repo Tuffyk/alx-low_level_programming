@@ -18,11 +18,19 @@ int main(void)
 	i = 3;
 	while (i <= 50)
 	{
-		printf("%ld, ", sum);
-		n1 = n2;
-		n2 = sum;
-		sum = n1 + n2;
+		if (i < 50)
+		{
+			printf("%ld, ", sum);
+			n1 = n2;
+			n2 = sum;
+			sum = n1 + n2;
+		}
+		else
+		{
+			printf("%ld\n");
+		}
 		i++;
 	}
+	
 	return (0);
 }
