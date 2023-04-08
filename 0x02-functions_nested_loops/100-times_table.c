@@ -13,7 +13,7 @@ void print_times_table(int n)
 	i = 0;
 	while (i <= n)
 	{
-		j = i;
+		j = 0;
 		while (j <= n)
 		{
 			if ((i * j) == 0 && j == 0)
