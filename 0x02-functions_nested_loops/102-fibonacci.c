@@ -12,7 +12,6 @@ int main(void)
 	n1 = 1;
 	n2 = 2;
 	sum = n1 + n2;
-	
 	printf("%d, %d, ", n1, n2);
 
 	i = 3;
