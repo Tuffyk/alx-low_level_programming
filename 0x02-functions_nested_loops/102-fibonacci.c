@@ -13,7 +13,7 @@ int main(void)
 	n2 = 2;
 	sum = n1 + n2;
 	
-	ptintf("%d, %d, ", n1, n2);
+	printf("%d, %d, ", n1, n2);
 
 	i = 3;
 	while (i <= 50)
