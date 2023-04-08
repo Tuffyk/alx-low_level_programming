@@ -14,7 +14,6 @@ int main(void)
 	n2 = 1;
 	sum = 0;
 	nextN = n1 + n2;
-	
 	while (nextN <= 4000000)
 	{
 		if (nextN % 2 == 0)
@@ -22,7 +21,7 @@ int main(void)
 			sum = sum + nextN;
 		}
 		n1 = n2;
-		n2 = sum;
+		n2 = nextN;
 		nextN = n1 + n2;
 	}
 	printf("%ld\n", sum);
