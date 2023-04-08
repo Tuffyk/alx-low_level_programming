@@ -29,10 +29,6 @@ int string_length(char *s)
 {
 	if (*s != '\0')
 	{
-		return 0;
-	}
-	else
-	{
 		return (1 + string_length(s + 1));
 	}
 }
