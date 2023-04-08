@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	int i, n1, n2, sum;
+	unsigned int i, n1, n2, sum;
 
 	n1 = 1;
 	n2 = 2;
