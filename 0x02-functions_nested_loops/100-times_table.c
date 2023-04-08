@@ -47,19 +47,19 @@ void print_times_table(int n)
 						_putchar(',');
 						_putchar(' ');
 						_putchar(' ');
-						if ((i * j) > 9)
-						{
-							_putchar('0' + ((i * j) / 10));
-							_putchar('0' + (i * j) % 10);
-						}
-						else
-						{
-							_putchar(' ');
-						}
 					}
-					_putchar('0' + (i * j));
-					j++;
+					if ((i * j) > 9)
+					{
+						_putchar('0' + ((i * j) / 10));
+						_putchar('0' + (i * j) % 10);
+					}
+					else
+					{
+						_putchar(' ');
+						_putchar('0' + (i * j));
+					}
 				}
+				j++;
 			}
 			i++;
 			_putchar('\n');
