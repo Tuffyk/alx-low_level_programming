@@ -27,9 +27,6 @@ int main(void)
 		}
 		else
 		{
-			n1 = n2;
-			n2 = n1;
-			sum = n1 + n2;
 			printf("%ld\n", sum);
 		}
 		i++;
