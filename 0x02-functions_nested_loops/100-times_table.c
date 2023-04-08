@@ -22,18 +22,8 @@ void print_times_table(int n)
 		{
 			j = 0;
 			while (j <= n)
-			{
-				/**
-				*if ((i * j) > 99)
-				*{
-				*	_putchar(',');
-				*	_putchar(' ');
-				*	_putchar('0' + ((i * j) / 100));
-				*	_putchar('0' + (((i * j) / 10)) % 10);
-				*	_putchar('0' + ((i * j) % 10));
-				*}
-				*else
-				*/	if (j > 0)
+			{	
+				if (j > 0)
 					{
 						_putchar(',');
 						_putchar(' ');
