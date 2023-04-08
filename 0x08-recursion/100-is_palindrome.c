@@ -9,9 +9,10 @@
 int is_palindrome(char *s)
 {
 	int strLen = string_length(s);
+
 	if (strLen <= 1)
 	{
-		return 1;
+		return (1);
 	}
 	else
 	{
@@ -33,7 +34,7 @@ int string_length(char *s)
 	}
 	else
 	{
-		return 0;
+		return (0);
 	}
 }
 
@@ -49,14 +50,14 @@ int string_check(char *s, int j, int k)
 {
 	if (j >= k)
 	{
-		return 1;
+		return (1);
 	}
 	else if (*(s + j) != *(s + k))
 	{
-		return 0;
+		return (0);
 	}
 	else
 	{
-		return string_check(s, j + 1, k - 1);
+		return (string_check(s, j + 1, k - 1));
 	}
 }
