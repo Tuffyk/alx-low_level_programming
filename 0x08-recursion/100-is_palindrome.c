@@ -31,6 +31,10 @@ int string_length(char *s)
 	{
 		return (1 + string_length(s + 1));
 	}
+	else
+	{
+		return 0;
+	}
 }
 
 /**
