@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i;
-	double n1, n2, sum;
+	unsigned double n1, n2, sum;
 
 	n1 = 1;
 	n2 = 2;
