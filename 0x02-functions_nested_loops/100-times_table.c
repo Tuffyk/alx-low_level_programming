@@ -44,7 +44,7 @@ void print_times_table(int n)
 							_putchar('0' + ((i * j) % 10));
 						}
 						_putchar(' ');
-						if ((i * j) > 9)
+						if ((i * j) > 9 && (i * j) <= 99)
 						{
 							_putchar('0' + ((i * j) / 10));
 							_putchar('0' + (i * j) % 10);
