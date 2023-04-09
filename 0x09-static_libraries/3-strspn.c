@@ -5,7 +5,7 @@
  * @s: first string
  * @accept: second string
  *
- * Return: number of bytes 
+ * Return: number of bytes
  */
 
 unsigned int _strspn(char *s, char *accept)
