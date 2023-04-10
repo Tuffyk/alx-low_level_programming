@@ -26,17 +26,12 @@ int main(int argc, char *argv[])
 		{
 			for (j = 0; argv[i][j] != '\0'; j++)
 			{
-				if (isdigit(argv[i][j]))
-				{
-					sum += atoi(argv[i]);
-				}
-				else
+				if (!isdigit(argv[i][j]))
 				{
 					check_int = 1;
-					break;
 				}
 			}
-		
+			sum += atoi(argv[i]);
 		}
 	}
 	if (check_int == 0)
