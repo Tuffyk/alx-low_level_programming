@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int multi = 0;
 
-	if (argc <= 22)
+	if (argc <= 2)
 	{
 		printf("Error\n");
 		return (1);
