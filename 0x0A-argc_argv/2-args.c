@@ -3,7 +3,7 @@
 /**
  * main - Prints all arguments it receives
  * @argc: count of arguments
- * @argv[]: array of pointers to the strings
+ * @argv: array of pointers to the strings
  *
  * Return: 0 on success.
  */
