@@ -13,44 +13,42 @@
 
 int main(int argc, char *argv[])
 {
-	int i, c;
+	int i, amount, count, check_int;
 
+	check_int = 0;
 	if (argc == 2)
 	{
-		if (!(isdigit(argv[1][0])))
+		for (i = 0; argv[1][i] != '\0'; i++)
+		{
+			if (!isdigit(argv[1][i]))
+			{
+				check_int = 1;
+			}
+		}
+		if (check_int == 1)
 		{
 			printf("0\n");
 			return (0);
 		}
 		else
 		{
-			c = atoi(argv[1]);
-			i = 0;
-			while (c != 0)
+			amount = atoi(argv[1]);
+			count = 0;
+			while (amount != 0)
 			{
-				if (c >= 25)
-				{
-					c -= 25;
-				}
-				else if (c >= 10)
-				{
-					c -= 10;
-				}
-				else if (c >= 5)
-				{
-					c -= 5;
-				}
-				else if (c >= 2)
-				{
-					c -= 2;
-				}
-				else if (c >= 1)
-				{
-					c -= 1;
-				}
-				i++;
+				if (amount >= 25)
+					amount -= 25;
+				else if (amount >= 10)
+					amount -= 10;
+				else if (amount >= 5)
+					amount -= 5;
+				else if (amount >= 2)
+					amount -= 2;
+				else if (amount >= 1)
+					amount -= 1;
+				count++;
 			}
-			printf("%d\n", i);
+			printf("%d\n", count);
 			return (0);
 		}
 	}
