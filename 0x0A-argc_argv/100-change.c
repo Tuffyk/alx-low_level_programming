@@ -31,28 +31,24 @@ int main(int argc, char *argv[])
 				if (c >= 25)
 				{
 					c -= 25;
-					i++;
 				}
 				else if (c >= 10)
 				{
 					c -= 10;
-					i++;
 				}
 				else if (c >= 5)
 				{
 					c -= 5;
-					i++;
 				}
 				else if (c >= 2)
 				{
 					c -= 2;
-					i++;
 				}
 				else if (c >= 1)
 				{
 					c -= 1;
-					i++;
 				}
+				i++;
 			}
 			printf("%d\n", i);
 			return (0);
