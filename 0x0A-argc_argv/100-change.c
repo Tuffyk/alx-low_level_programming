@@ -14,7 +14,7 @@
 int main(int argc, char *argv[])
 {
 	int i, c;
-	
+
 	if (argc == 2)
 	{
 		if (!(isdigit(argv[1][0])))
@@ -47,8 +47,8 @@ int main(int argc, char *argv[])
 				{
 					c -= 2;
 					i++;
-				}	
-				else if (c >=1)
+				}
+				else if (c >= 1)
 				{
 					c -= 1;
 					i++;
