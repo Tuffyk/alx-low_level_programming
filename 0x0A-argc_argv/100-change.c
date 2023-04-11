@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 {
 	int i, amount, count, check_int;
 
-	check_int = 0, count = 0, amount = atoi(argv[1]);
+	check_int = 0, count = 0;
 	if (argc == 2)
 	{
 		for (i = 0; argv[1][i] != '\0'; i++)
@@ -30,6 +30,7 @@ int main(int argc, char *argv[])
 		}
 		else
 		{
+			amount = atoi(argv[1]);
 			while (amount != 0)
 			{
 				if (amount >= 25)
