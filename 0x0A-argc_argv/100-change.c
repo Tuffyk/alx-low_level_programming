@@ -26,7 +26,6 @@ int main(int argc, char *argv[])
 		if (check_int == 1)
 		{
 			printf("0\n");
-			return (0);
 		}
 		else
 		{
@@ -46,8 +45,8 @@ int main(int argc, char *argv[])
 				count++;
 			}
 			printf("%d\n", count);
-			return (0);
 		}
+		return (0);
 	}
 	else
 	{
