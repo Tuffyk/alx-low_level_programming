@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * *_strdub - Returns a newly allocated space in memory
+ * *_strdup - Returns a newly allocated space in memory
  * which contains a copy of a the string given a parameter
  * @str: the given string
  *
@@ -20,16 +20,16 @@ char *_strdup(char *str)
 		str_len++;
 	}
 	s_cpy = malloc(sizeof(char) * str_len);
-	if (str_len == 0 || s_cpy == NULL)
+	for (j = 0; str[j] != '\0'; j++)
+	{
+		s_cpy[j] = str[j];
+	}
+	if(s_cpy == NULL)
 	{
 		return (NULL);
 	}
 	else
 	{
-		for (j = 0; str[j] != '\0'; j++)
-		{
-			s_cpy[j] = str[j];
-		}
 		return (s_cpy);
 	}
 }
