@@ -19,13 +19,17 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		str_len++;
+	}
+	s_cpy = malloc(sizeof(char) * (str_len + 1));
+	if (s_cpy == NULL)
+	{
+		return (NULL);
+	}
 	else
 	{
-		for (i = 0; str[i] != '\0'; i++)
-		{
-			str_len++;
-		}
-		s_cpy = malloc(sizeof(char) * (str_len + 1));
 		for (j = 0; j <= str_len; j++)
 		{
 			s_cpy[j] = str[j];
