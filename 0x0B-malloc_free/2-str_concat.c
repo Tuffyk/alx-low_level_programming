@@ -31,11 +31,9 @@ char *str_concat(char *s1, char *s2)
 	}
 	else
 	{
-		for (j = 0, k = s1_len; s1[j] != '\0' || s2[j] != '\0'; j++, k++)
+		for (j = 0, k = (s1_len - 1) s1[j] != '\0' || s2[j] != '\0'; j++, k++)
 		{
-			if (s1[j] != '\0')
 			c[j] = s1[j];
-			if(s2[j] != '\0')
 			c[k] = s2[j];
 		}
 		return (c);
