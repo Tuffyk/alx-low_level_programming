@@ -7,25 +7,25 @@
  * @size: size of the array
  * @c: array of chars
  *
- * Return: 0 on success (a pointer to the array), "NUll" otherwise
+ * Return: a pointer to the array, "NUll" otherwise
  */
 
 char *create_array(unsigned int size, char c)
 {
 	char *ar;
+	int i;
 
-	ar = malloc(size);
-	*ar = c;
-	if (size == 0)
+	ar = malloc(sizeof(char) * size);
+	if (size == 0 || ar == NULL)
 	{
 		return (NULL);
 	}
-	if (ar == NULL)
-	{
-		_putchar('0');
-	}
 	else
 	{
+		for (i = 0; i < size; i++)
+		{
+			ar[i] = c;
+		}
 		return (ar);
 	}
 }
