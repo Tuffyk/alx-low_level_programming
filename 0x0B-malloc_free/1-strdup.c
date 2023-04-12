@@ -25,7 +25,7 @@ char *_strdup(char *str)
 		{
 			str_len++;
 		}
-		s_cpy = malloc(sizeof(char) * str_len);
+		s_cpy = malloc(sizeof(char) * (str_len + 1));
 		for (j = 0; j <= str_len; j++)
 		{
 			s_cpy[j] = str[j];
