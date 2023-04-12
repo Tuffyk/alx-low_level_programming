@@ -30,7 +30,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		for (j = 0; j <= str_len; j++)
+		for (j = 0; str[j] != '\0'; j++)
 		{
 			s_cpy[j] = str[j];
 		}
