@@ -12,7 +12,7 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i, len1, len2;
+	unsigned int i, len1, len2;
 	char *str;
 
 	if (s1 == NULL)
@@ -53,4 +53,3 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (str);
 	}
 }
-
