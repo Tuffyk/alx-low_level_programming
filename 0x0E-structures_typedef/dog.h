@@ -7,6 +7,7 @@
  * Description: Poppy information
  */
 
+typedef struct dog dog;
 struct dog
 {
 	char *name;
