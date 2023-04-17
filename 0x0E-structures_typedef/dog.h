@@ -1,8 +1,8 @@
 /**
  * struct dog - Poppy
- * @name: name
- * @age: age
- * @owner: owner
+ * @name: poppy name
+ * @age: poppy age
+ * @owner: poppy owner
  *
  * Description: Poppy information
  */
