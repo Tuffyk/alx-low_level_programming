@@ -24,13 +24,12 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		{
 			printf("%d", va_arg(ap, int));
 		}
-		else if (i <= (n - 1))
-		{
-			printf("%d%s", va_arg(ap, int), separator);
-		}
 		else
 		{
-			printf("%d", va_arg(ap, int));
+			if (i < (n - 1))
+				printf("%d%s", va_arg(ap, int), separator);
+			else
+				printf("%d", va_arg(ap, int));
 		}
 	}
 	printf("\n");
