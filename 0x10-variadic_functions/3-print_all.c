@@ -15,12 +15,12 @@ void print_all(const char * const format, ...)
 	char *stmp;
 	va_list ap;
 
+	va_start(ap, format);
 	while (format == NULL)
 	{
 		printf("\n");
 		return;
 	}
-	va_start(ap, format);
 	i = 0;
 	while (format[i])
 	{
