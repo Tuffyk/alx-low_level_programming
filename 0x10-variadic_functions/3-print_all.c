@@ -16,11 +16,6 @@ void print_all(const char * const format, ...)
 	va_list ap;
 
 	va_start(ap, format);
-	while (format == NULL)
-	{
-		printf("\n");
-		return;
-	}
 	i = 0;
 	while(format[i])
 	{
