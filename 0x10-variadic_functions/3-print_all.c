@@ -46,9 +46,9 @@ void print_all(const char * const format, ...)
 				i++;
 				continue;
 		}
+		i++;
 		if (format[i] != '\0')
 			printf(", ");
-		i++;
 	}
 	va_end(ap);
 	printf("\n");
