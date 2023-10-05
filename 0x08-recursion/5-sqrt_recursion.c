@@ -12,7 +12,7 @@ int _guess_sqrt(int n, int square)
 {
 	if (square % (n / square) == 0)
 	{
-		if (square * ( n / square) == n)
+		if (square * (n / square) == n)
 			return (square);
 		else
 			return (-1);
