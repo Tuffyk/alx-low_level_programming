@@ -17,7 +17,7 @@ int _guess_sqrt(int n, int square)
 		else
 			return (-1);
 	}
-	return (0 + _guess_sqrt(n, square++));
+	return (0 + _guess_sqrt(n, square + 1));
 }
 
 /**
