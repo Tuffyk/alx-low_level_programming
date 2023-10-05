@@ -10,12 +10,14 @@
 
 int _guess_sqrt(int n, int square)
 {
-	if ((square * square) > n)
-		return (-1);
-	if ((square * square) == n)
-		return (square);
-	else
-		return (_guess_sqrt(n, square++));
+	if (square % (n / square) == 0)
+	{
+		if (square * ( n / square) == n)
+			return (square);
+		else
+			return (-1);
+	}
+	return (0 + _guess_sqrt(n, square++));
 }
 
 /**
