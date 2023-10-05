@@ -28,10 +28,7 @@ int _guess_sqrt(int n, int square)
 
 int _sqrt_recursion(int n)
 {
-	int square;
-
-	square = 1;
 	if (n < 0)
 		return (-1);
-	return (_guess_sqrt(n, square));
+	return (_guess_sqrt(n, 2));
 }
