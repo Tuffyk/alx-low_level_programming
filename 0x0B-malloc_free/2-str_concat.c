@@ -14,10 +14,7 @@ char *str_concat(char *s1, char *s2)
 	char *ns;
 	int i, j, lens1, lens2, len;
 
-	if (s1 == NULL)
-		s1[0] = '\0';
-	if (s2 == NULL)
-		s2[0] = '\0';
+	lens1 = lens2 = 0;
 	if (s1 != NULL)
 	{
 		for (lens1 = 0; s1[lens1] != '\0'; lens1++)
